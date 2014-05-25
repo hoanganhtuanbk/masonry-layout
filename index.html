@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Masonry Layout</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" /> 
+	<meta name="viewport" content="width=device-width, intial-scale=1.0, user-scalable=no" />
+	<script src="js/html5shiv.js"></script>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	<section class="header">
+		<h1>Demo Masonry Layout - Best Quotes for Designers</h1>
+		<h3>Designed by {UNS}_Mikun</h3>
+	</section>	<!-- end header -->
+
+	<section class="container">
+		<ul>
+			<li class="item red">
+				<a href="https://www.behance.net/gallery/Oscar-Wilde/9330545">
+					<img src="img/1.jpg" alt="1" />
+					<p>Dewald Venter</p>
+				</a>
+			</li>
+			<li class="item green">
+				<a href="https://www.behance.net/gallery/Picassos-Quote/10886511">
+					<img src="img/2.jpg" alt="2" />
+					<p>Peter Bielous</p>
+				</a>
+			</li>
+			<li class="item blue">
+				<a href="https://www.behance.net/gallery/Saul-Bass-Poster/5623933">
+					<img src="img/3.jpg" alt="3" />
+					<p>Brittany Krebs</p>
+				</a>
+			</li>
+			<li class="item green">
+				<a href="https://www.behance.net/gallery/Type-Posters-Inspirational-Quotes/5391679">
+					<img src="img/4.jpg" alt="4" />
+					<p>Ben Fearnley</p>
+				</a>
+			</li>
+			<li class="item blue">
+				<a href="https://www.behance.net/gallery/Do-what-you-can/10092743">
+					<img src="img/5.jpg" alt="5" />
+					<p>Jessie Schneider</p>
+				</a>
+			</li>
+			<li class="item blue">
+				<a href="https://www.behance.net/gallery/What-I-dont-Know/10474405">
+					<img src="img/6.jpg" alt="6" />
+					<p>Joshua Duthie</p>
+				</a>
+			</li>
+			<li class="item blue">
+				<a href="https://www.behance.net/gallery/Uni-Project-Typeset-First-Semester/10510949">
+					<img src="img/7.jpg" alt="7" />
+					<p>Robert McCluskey</p>
+				</a>
+			</li>
+			<li class="item red">
+				<a href="https://www.behance.net/gallery/Blackboard-Typography/11047481">
+					<img src="img/8.jpg" alt="8" />
+					<p>Vashti Barker</p>
+				</a>
+			</li>
+			<li class="item green">
+				<a href="https://www.behance.net/gallery/The-core-of-mans-spirit/2101430">
+					<img src="img/9.jpg" alt="9" />
+					<p>Richard Hedberg</p>
+				</a>
+			</li>
+			<li class="item blue">
+				<a href="https://www.behance.net/gallery/Iron-Man/10736129">
+					<img src="img/10.jpg" alt="10" />
+					<p>Kat Bacasmas</p>
+				</a>
+			</li>
+			<li class="item red">
+				<a href="https://www.behance.net/gallery/Every-Artist-was-First-an-Amateur/2086512">
+					<img src="img/11.jpg" alt="11" />
+					<p>Jeremy Burns</p>
+				</a>
+			</li>
+			<li class="item red">
+				<a href="https://www.behance.net/gallery/Directions-Wallpaper-Freebie/10967337">
+					<img src="img/12.jpg" alt="12" />
+					<p>Consider Graphic Design Studio</p>
+				</a>
+			</li>
+			<li class="item blue">
+				<a href="https://www.behance.net/gallery/Quote-Experimentation/1031973">
+					<img src="img/13.jpg" alt="13" />
+					<p>Chloe Cornish</p>
+				</a>
+			</li>
+			<li class="item green">
+				<a href="https://www.behance.net/gallery/Never-Finished/10052595">
+					<img src="img/14.jpg" alt="14" />
+					<p>Sam Cook</p>
+				</a>
+			</li>
+			<li class="item green">
+				<a href="https://www.behance.net/gallery/Churchill/1957019">
+					<img src="img/15.jpg" alt="15" />
+					<p>Neil Leonard</p>
+				</a>
+			</li>
+		</ul>
+	</section>	<!-- end container -->
+
+	<!-- Javascript - Jquery -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/masonry.min.js"></script>
+	<script src="js/jquery.imagesloaded.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var $container = $('.container');
+			
+			$container.imagesLoaded(function() {
+				$container.masonry({
+					itemSelector: '.item'
+				});
+			});
+		})
+	</script>
+</body>
+</html>
